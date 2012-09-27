@@ -9,10 +9,10 @@
 
   // Constructor
   var Plugin = $.Plugin = function (element, options) {
-    //private variables
+    // Private variables
     var privateVariable; // private member only available within the constructor fn
 
-    //protected variables
+    // Protected variables
     this.protectedVariable = ''; // protected menber can access within the object instance fn
 
     // Attach element to the 'this' keyword
@@ -22,10 +22,10 @@
     // Merge the options given by the user with the defaults
     this.options = $.extend({}, Plugin.defaults, options);
 
-    //private methods
+    // Private methods
     function privateMethod() {}
 
-    //protected methods
+    // Protected methods
     this.protectedMethod = function () {};
 
     // Initialization code to get the ball rolling
@@ -77,4 +77,4 @@
       }
     });
   };
-}(jQuery));
+}(window, document, jQuery));
