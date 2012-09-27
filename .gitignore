@@ -1,0 +1,9 @@
+# ignore all grunt related directories and files.
+grunt.js
+package.json
+node_modules/**/*
+jQueryPluginTemplate.jquery.json
+grunt.js
+
+# ignore swap files
+*.swp
